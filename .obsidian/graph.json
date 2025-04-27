@@ -18,7 +18,14 @@
       "query": "path:\"Full Notes\"  ",
       "color": {
         "a": 1,
-        "rgb": 65450
+        "rgb": 34047
+      }
+    },
+    {
+      "query": "path:Template  ",
+      "color": {
+        "a": 1,
+        "rgb": 14669836
       }
     }
   ],
@@ -32,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.401982897776102,
-  "close": false
+  "scale": 1.4019828977761022,
+  "close": true
 }

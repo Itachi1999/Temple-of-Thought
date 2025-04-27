@@ -69,16 +69,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Full Notes/Mastering Uneven Sequences in Pytorch Batches- `collate_fn` and `pad_sequence`.md",
+                "file": "Full Notes/Enhance Your Django App with Python Enum A Practical Guide.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "Mastering Uneven Sequences in Pytorch Batches- `collate_fn` and `pad_sequence`"
+              "title": "Enhance Your Django App with Python Enum A Practical Guide"
+            }
+          },
+          {
+            "id": "765828ffa60a0657",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Full Notes/Start of Attention in Machine Learning.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Start of Attention in Machine Learning"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -199,13 +215,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Full Notes/Mastering Uneven Sequences in Pytorch Batches- `collate_fn` and `pad_sequence`.md",
+                "file": "Full Notes/Start of Attention in Machine Learning.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Mastering Uneven Sequences in Pytorch Batches- `collate_fn` and `pad_sequence`"
+              "title": "Outline of Start of Attention in Machine Learning"
             }
           },
           {
@@ -223,7 +239,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 431.5
+    "width": 307.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -239,29 +255,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "988cd156e000f4e3",
+  "active": "765828ffa60a0657",
   "lastOpenFiles": [
+    "Source Materials/NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE.md",
+    "Tags/django.md",
+    "Template/Main Note.md",
+    "Full Notes/Start of Attention in Machine Learning.md",
+    "Full Notes/Enhance Your Django App with Python Enum A Practical Guide.md",
+    "README.md",
+    "Full Notes/Mastering Uneven Sequences in Pytorch Batches- `collate_fn` and `pad_sequence`.md",
     "Rough Notes/2024-12-03.md",
     "Rough Notes/2025-04-27.md",
     "Rough Notes/2025-04-26.md",
-    "README.md",
-    "Full Notes/Mastering Uneven Sequences in Pytorch Batches- `collate_fn` and `pad_sequence`.md",
     "Tags/Deep Learning.md",
     "Full Notes/A Holistic Approach to Learning Mathematics and AI.md",
-    "Full Notes/Enhance Your Django App with Python Enum A Practical Guide.md",
     "Tags/Pytorch.md",
     "Rough Notes/2025-04-17.md",
-    "Source Materials/NEURAL MACHINE TRANSLATION BY JOINTLY LEARNING TO ALIGN AND TRANSLATE.md",
     "Rough Notes/2024-12-18.md",
     "Rough Notes/2025-04-15.md",
     "Tags/Artificial Intelligence.md",
     "Tags/Natural Language Processing.md",
     "Tags/Learning.md",
     "Tags/Mathematics.md",
-    "Template/Main Note.md",
     "Tags/software development.md",
     "Tags/python.md",
-    "Tags/django.md",
     "Full Notes",
     "Template",
     "Indexes",
