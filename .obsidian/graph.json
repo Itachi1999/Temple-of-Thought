@@ -6,9 +6,24 @@
   "hideUnresolved": true,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "path:Tags  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:\"Full Notes\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 65450
+      }
+    }
+  ],
   "collapse-display": false,
-  "showArrow": true,
+  "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1.12083333333333,
   "lineSizeMultiplier": 1,
@@ -17,6 +32,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.0000000000000002,
-  "close": true
+  "scale": 1.401982897776102,
+  "close": false
 }
