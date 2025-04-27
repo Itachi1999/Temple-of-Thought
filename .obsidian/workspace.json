@@ -76,9 +76,24 @@
               "icon": "lucide-file",
               "title": "Mastering Uneven Sequences in Pytorch Batches- `collate_fn` and `pad_sequence`"
             }
+          },
+          {
+            "id": "4a49b461558d2cc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -218,7 +233,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 745.5
+    "width": 431.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -234,9 +249,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "988cd156e000f4e3",
+  "active": "4a49b461558d2cc6",
   "lastOpenFiles": [
     "Full Notes/Mastering Uneven Sequences in Pytorch Batches- `collate_fn` and `pad_sequence`.md",
+    "README.md",
     "Tags/Deep Learning.md",
     "Full Notes/A Holistic Approach to Learning Mathematics and AI.md",
     "Full Notes/Enhance Your Django App with Python Enum A Practical Guide.md",
