@@ -218,7 +218,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 745.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -234,7 +234,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0bfb07dc6ff97a59",
+  "active": "988cd156e000f4e3",
   "lastOpenFiles": [
     "Full Notes/Mastering Uneven Sequences in Pytorch Batches- `collate_fn` and `pad_sequence`.md",
     "Tags/Deep Learning.md",
