@@ -44,7 +44,7 @@ $$
 e_{ij} = a(s_{i-1}, h_j)
 $$
 
-is `alignment model` 
+is `alignment model`  
 
 References:
 1. <a id="1"></a>Attention is all you need. ^1
