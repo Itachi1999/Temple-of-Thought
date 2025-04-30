@@ -46,8 +46,9 @@ $$
 
 is `alignment model`  
 
-References:
+#### References:
 1. <a id="1"></a>Attention is all you need. ^1
 2. First attention paper ^2
 3. Cho et al., 2014 ^3
 4. Sutskever et al., 2014 ^4
+5. 
