@@ -24,9 +24,26 @@ So back in 2014, Neural Machine Translation was done using encoder-decoder based
 #### Main Concept:
 
 Overcoming these drawbacks mentioned in the previous section, the authors of the paper came up with a brilliant idea to "Learn to align and translate" simultaneously. This "Learning to align" is essentially what the authors called paying "attention" to certain parts of the input sentence. The following subsections discuss this idea in details.
+> [!info] Two main ideas:
+> - Encoder: A bidirectional RNN 
+> - Decoder: Simulates searching through a source sentence while decoding each word in the translation.
+
 ##### Decoder: General Idea
 
+The general idea of the decoder is that for generating target word $y_i$, it relies on distinct context vector $c_i$. 
+$$
+c_i = \sum_{j=1}^{T_x} \alpha_{ij}h_{ij} 
+$$
+The weight $\alpha_{ij}$ of each annotation ${h_j}$ is computed by:
+$$
+\alpha_{ij} = \frac{exp(e_{ij})}{\sum_{k=1}^{T_x} exp(e_{ik})}
+$$
+where 
+$$
+e_{ij} = a(s_{i-1}, h_j)
+$$
 
+is `alignment model` 
 
 References:
 1. <a id="1"></a>Attention is all you need. ^1
