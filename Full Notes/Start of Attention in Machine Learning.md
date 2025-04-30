@@ -10,7 +10,7 @@ This blog explains the main concept behind the the paper that introduces attenti
 
 #### Background
 
-So back in 2014, Neural Machine Translation was done using encoder-decoder based models where the encoder and decoder consists of RNN[{3}](#^3),[{4}](#^4). In these models, the encoder encodes the French(taking as an example) sentence into a single fixed length context vector (c). If you look at figure 1, you would understand that if the length of French sentence was 40 instead of 4, it would have been the same fixed length vector c (for the decoder) which would be the output of the last RNN block. This has the following drawback:
+So back in 2014, Neural Machine Translation was done using encoder-decoder based models where the encoder and decoder consists of RNN[{3}](#^3),[{4}](#^4). In these models, the encoder encodes the French(taking as an example) sentence into a single fixed length context vector`(c)`. If you look at figure 1, you would understand that if the length of French sentence was 40 instead of 4, it would have been the same fixed length vector `c` (for the decoder) which would be the output of the last RNN block. This has the following drawback:
 
 > [!tip] Drawback
 > The fixed length vector c is a bottleneck for longer sentences. It can not remember the context of the earlier parts of the sentence. [{3}](#^3) showed that these kind of encoder-decoder model's performance deteriorates rapidly for longer sentences.
@@ -24,6 +24,7 @@ So back in 2014, Neural Machine Translation was done using encoder-decoder based
 #### Main Concept:
 
 Overcoming these drawbacks mentioned in the previous section, the authors of the paper came up with a brilliant idea to "Learn to align and translate" simultaneously. This "Learning to align" is essentially what the authors called paying "attention" to certain parts of the input sentence. The following subsections discuss this idea in details.
+
 > [!info] Two main ideas:
 > - Encoder: A bidirectional RNN 
 > - Decoder: Simulates searching through a source sentence while decoding each word in the translation.
