@@ -6,7 +6,7 @@ Tags: [[Artificial Intelligence]], [[Deep Learning]], [[Natural Language Process
 ## Start of Attention in Machine Learning
 #### Introduction
 
-This blog explains the main concept behind the the paper that introduces attention mechanism in neural network models which later became cornerstone for the revolutionary paper "Attention is all you need. (Vaswani et al., 2017)"[{1}](#^1). I was not mature in Natural Language Processing (NLP) when I read about transformers and the Vaswani et a. 2017[{1}](#^1) back in 2022, so I thought that Transformers first introduced attention mechanism. I was ignorant for many years until now, I read the seminal paper which first introduces attention mechanism: Neural Machine Translation by Jointly Learning to Align and Translate(Bahdanau et al., 2015)[{2}](#^2) 
+This blog explains the main concept behind the the paper that introduces attention mechanism in neural network models which later became cornerstone for the revolutionary paper "Attention is all you need. (Vaswani et al., 2017)"[{1}](#^1). I was not mature in Natural Language Processing (NLP) when I read about transformers and the Vaswani et al. 2017[{1}](#^1) back in 2022, so I thought that Transformers first introduced attention mechanism. I was ignorant for many years until now, I read the seminal paper which first introduces attention mechanism: Neural Machine Translation by Jointly Learning to Align and Translate(Bahdanau et al., 2015)[{2}](#^2) 
 
 #### Background
 
