@@ -35,6 +35,7 @@ The general idea of the decoder is that for generating target word $y_i$, it rel
 $$
 c_i = \sum_{j=1}^{T_x} \alpha_{ij}h_{ij} 
 $$
+where $h_{ij}$ is the annotation or output of the RNN block in the encoder for input $x_j$ in the $i^{th}$ iteration of decoding (generating the  $i^{th}$ word). The approach of taking a weighted sum of the all the annotations can be seen as computing the `expected annotation` where the probabilities are $\alpha_{ij} \in [0,1]$.  
 The weight $\alpha_{ij}$ of each annotation ${h_j}$ is computed by:
 $$
 \alpha_{ij} = \frac{exp(e_{ij})}{\sum_{k=1}^{T_x} exp(e_{ik})}
@@ -43,8 +44,15 @@ where
 $$
 e_{ij} = a(s_{i-1}, h_j)
 $$
+is an `alignment model`, it scores on how input around position $j$ and the output at position $i$ match. The $s_{i-1}$ is the RNN hidden state decoder which produces $y_{i-1}$. The alignment model $a$ is trained on using a feedforward neural network. The annotation $h_{i}$ represents the importance/context words around position $j$. 
 
-is `alignment model`  
+> [!info] Intuition
+> The probability $\alpha_{ij}$ or its associated energy $e_{ij}$ represents importance of $h_j$ with respect to $s_{i-1}$ on deciding the next state $s_i$ in turn generating $y_i$.
+> This theory implies that generating a word in a particular position ($y_i$) the decoder always looks at the parts of the sentence and decides where to put *attention* to.
+> The encoder no longer encodes the whole sentence into a single fixed length vector. The decoder selectively retrieves parts of the sentence and creates variable context vector for every word.  
+
+##### Encoder: Bidirectional RNN
+
 
 #### References:
 1. <a id="1"></a>Attention is all you need. ^1
