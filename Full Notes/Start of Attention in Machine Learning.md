@@ -44,7 +44,7 @@ where
 $$
 e_{ij} = a(s_{i-1}, h_j)
 $$
-is an `alignment model`, it scores on how input around position $j$ and the output at position $i$ match. The $s_{i-1}$ is the RNN hidden state decoder which produces $y_{i-1}$. The alignment model $a$ is trained on using a feedforward neural network. The annotation $h_{i}$ represents the importance/context words around position $j$. 
+is an `alignment model`, it scores on how input around position $j$ and the output at position $i$ match. The $s_{i-1}$ is the RNN hidden state decoder which produces $y_{i-1}$. The alignment model $a$ is trained on using a feedforward neural network. The annotation $h_{i}$ represents the importance/context words around position $j$ for the input sentence $x_j$. 
 
 > [!info] Intuition
 > The probability $\alpha_{ij}$ or its associated energy $e_{ij}$ represents importance of $h_j$ with respect to $s_{i-1}$ on deciding the next state $s_i$ in turn generating $y_i$.
@@ -53,7 +53,20 @@ is an `alignment model`, it scores on how input around position $j$ and the outp
 
 ##### Encoder: Bidirectional RNN
 
-
+RNN typically reads input sentences from start ($x_1$) to the end ($x_{T_x}$). But in that case the annotations $h_j$ only represent the summarization of the preceding words in the sentence. The author here proposed to use Bidirectional RNN (BRNN) for which the annotations $h_j$ not only represent the summarization of the preceding words, but also the following words. 
+BRNN consists of a forward RNN's and a backward RNN's. The forward RNN reads the input sentence from $x_1$ to $x_{T_x}$ and creates hidden states
+$$
+(f_1, f_2, f_3, ..., f_{T_x})
+$$
+The backward RNN reads the input sentence from $x_{T_x}$ to $x_1$ and creates hidden states
+$$
+(b_{T_x}, b_{T_x-1}, b_{T_x-2}, ..., b_2, b_1)
+$$
+To obtain the annotation $h_j$ for word $x_j$, the forward hidden states and backward hidden states are concatenated:
+$$
+h_j = [f_j^T;b_j^T]^T
+$$
+RNNs have a tendency to represent recent inputs, so, the annotation $h_j$ will b focused on input words around $x_j$.
 #### References:
 1. <a id="1"></a>Attention is all you need. ^1
 2. First attention paper ^2
