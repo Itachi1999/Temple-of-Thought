@@ -17,7 +17,7 @@ So back in 2014, Neural Machine Translation was done using encoder-decoder based
 
 
 <figure>
-	  <img src="Encoder-Decoder without Attention.png" alt="Alt text" width="100%" height="200%">
+	  <img src="Encoder-Decoder.svg" alt="Alt text" width="100%" height="200%">
 	  <figcaption><em>Figure 1: Encoder-Decoder without Attention.</em></figcaption>
 </figure>
 
@@ -28,6 +28,11 @@ Overcoming these drawbacks mentioned in the previous section, the authors of the
 > [!info] Two main ideas:
 > - Encoder: A bidirectional RNN 
 > - Decoder: Simulates searching through a source sentence while decoding each word in the translation.
+
+<figure>
+	  <img src="Encoder-Decoder Attention.svg" alt="Alt text" width="100%" height="200%">
+	  <figcaption><em>Figure 1: Encoder-Decoder with Attention.</em></figcaption>
+</figure>
 
 ##### Decoder: General Idea
 
@@ -67,9 +72,15 @@ $$
 h_j = [f_j^T;b_j^T]^T
 $$
 RNNs have a tendency to represent recent inputs, so, the annotation $h_j$ will b focused on input words around $x_j$.
+These annotations will be used in decoder and the alignment model to calculate the context vector ($c_i$).
+
+#### Conclusion
+write a conclusion
+
+Stay tuned for the next blog where this paper is explained practically by programming it through PyTorch.
+
 #### References:
 1. <a id="1"></a>Attention is all you need. ^1
 2. First attention paper ^2
 3. Cho et al., 2014 ^3
 4. Sutskever et al., 2014 ^4
-5. 
